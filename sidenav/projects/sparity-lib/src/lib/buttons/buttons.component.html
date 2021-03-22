@@ -1,0 +1,12 @@
+
+
+<!-- <button mat-raised-button color="accent" (click)="show()">Upload</button> -->
+
+
+
+
+<mat-card>
+    <h1>File Upload</h1>
+ <input type="file" #inputRef  (change)="onFileSelected($event)"/>
+  <button mat-raised-button color="warn" type="button" (click)="uploadFile()">Upload</button>
+</mat-card>

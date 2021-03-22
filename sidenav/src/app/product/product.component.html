@@ -1,0 +1,12 @@
+<p>product works!</p>
+<button mat-raised-button color="accent" 
+                  (click)="openDialog()">show</button>
+
+<mat-card>
+    <mat-list>
+        <mat-list-item routerLink="productlist">Product List</mat-list-item>
+        <mat-list-item routerLink="showproducts">Show Products</mat-list-item>
+      </mat-list>
+      
+</mat-card>
+                  <router-outlet></router-outlet>
