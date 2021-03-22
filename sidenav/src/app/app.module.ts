@@ -20,6 +20,7 @@ import {AuthService} from './service/guards/auths.service';
 import {AuthGuardGuard} from './service/guards/auth-guard.guard';
 import { ProductlistComponent } from './product/productlist/productlist.component';
 import { ShowproductsComponent } from './product/showproducts/showproducts.component';
+import { UserComponent } from './user/user.component';
 
 const routes :Routes = [
   {path : '',component:HomeComponent},
@@ -31,6 +32,7 @@ const routes :Routes = [
   ]},
   {path : 'security',component:SecurityComponent},
   {path : 'form',component:SampleComponent},
+  {path : 'user' , component:UserComponent}
 ]
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ const routes :Routes = [
     SampleComponent,
     ProductlistComponent,
     ShowproductsComponent,
+    UserComponent,
   ],
    entryComponents:[DialogComponent],
   imports: [
